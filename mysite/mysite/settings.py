@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'i=n^tc%@@gq#8ev6dlymy9+-%@^f!q54sjf0rvikt_k5bl(t1='
+SECRET_KEY = 'j!9%02o3rztho+=6ql-z$-ie!bl!%au=t3*-=*)0lmp2k*%u-g'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -79,6 +79,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+	'NAME': 'mysite.db',
     }
 }
 
@@ -120,6 +121,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
-
 LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = '/'
